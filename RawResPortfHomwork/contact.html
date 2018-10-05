@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RawRespPortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="pheader">
+        <div class="tnav" id="myTnav">
+            <div class="name">
+                <strong>Alaa Al Shammari</strong>
+            </div>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="index.html" style="background-color: #4aaaa5;">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myfun()">
+                <i class="fa fa-bars"></i>
+            </a>
+    
+        </div>
+    </div>
+    <div class="container" id="cont">
+        <div class="artTitle">
+            <a href="index.html">About Me</a>  
+        </div>
+        <hr>
+        <div class="formdiv">
+                <form id="frm"> 
+                    <label id ="first" for="fname">First Name</label>
+                    <div class="clearfix"></div>
+                    <input type="text" id="fname" placeholder="Your name.">
+                    <div class="clearfix"></div>
+
+                    <label id ="sec" for="email">Email</label>
+                    <div class="clearfix"></div>
+
+                    <input type="text" id="email" placeholder="Your email.">
+                    <div class="clearfix"></div>
+
+                    <label id="third" for="msg">Message</label>
+                    <div class="clearfix"></div>
+
+                    <textarea id="txt" placeholder="Your message"></textarea>
+                    <div class="clearfix"></div>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    </div>
+    <div class="beforfooter"></div>
+    <div class="beforfooter"></div>
+    <footer class="foot">
+        &copy; Alhilly
+    </footer>
+    <script>
+        function myfun(){
+            var x = document.getElementById("myTnav");
+        if(x.className === "tnav"){
+            x.className += " responsive";
+        }else{
+            x.className = "tnav";
+        }
+       
+        }
+        $(function(){
+            var y = document.getElementById("cont");
+
+            if(y.className === "container"){
+            y.className += " respo";
+            }else{
+                y.className ="container";
+            }
+        });
+    </script>
+</body>
+</html>

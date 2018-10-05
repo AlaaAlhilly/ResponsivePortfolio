@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RawRespPortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="pheader">
+        <div class="tnav" id="myTnav">
+            <div class="name">
+                <strong>Alaa Al Shammari</strong>
+            </div>
+            <a href="contact.html" >Contact</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="index.html" style="background-color: #4aaaa5;">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myfun()">
+                <i class="fa fa-bars"></i>
+            </a>
+    
+        </div>
+    </div>
+    <div class="container" id="cont">
+          
+        <div class="artTitle">
+            <a href="portofolio.html">Portofolio</a>
+            <hr>
+        </div>
+        <p id ="firstp"><b>Welcome to my projects page</b></p><br>
+        <div class="ptable">
+                <div class="clearfix">
+                </div>
+                <div class="imgb im1">
+                    <img src="./assets/images/portofolio/angrybird.png">
+                    <div class="title">AngryBird Game</div>
+                </div>
+                <div class="imgb im2">
+                        <img src="./assets/images/portofolio/dbshot.jpg">
+                        <div class="title">Dashbord WebApp</div>
+                </div>
+                <div class="imgb im4">
+                    <img src="./assets/images/portofolio/Fifa-15-webapp.png">
+                    <div class="title">Fifa-15 WebApp</div>
+                </div>
+                <div class="imgb im5">
+                    <img src="./assets/images/portofolio/grand-tanks-lead.jpg">
+                    <div class="title">Tank Game</div>
+                </div>
+                <div class="imgb im7">
+                    <img src="./assets/images/portofolio/matlab.png">
+                    <div class="title">Matlab WebApp</div>
+                </div>
+                <div class="imgb im8">
+                    <img src="./assets/images/portofolio/taxedo-landing.png">
+                    <div class="title">TaxLanding WebApp</div>
+                </div>
+                <div class="imgb im9">                            
+                    <img src="./assets/images/portofolio/Tempees.jpg">
+                    <div class="title">Tempess WebApp</div>
+                </div>
+                <div class="imgb im10">
+                    <img src="./assets/images/portofolio/wether.png">
+                    <div class="title">Wether WebApp</div>
+                </div>
+            </div>
+    
+    </div>
+    <div class="beforfooter"></div>
+    <footer class="foot">
+        &copy; Alhilly
+    </footer>
+    <script>
+        function myfun(){
+            var x = document.getElementById("myTnav");
+        if(x.className === "tnav"){
+            x.className += " responsive";
+        }else{
+            x.className = "tnav";
+        }
+       
+        }
+        $(function(){
+            var y = document.getElementById("cont");
+
+            if(y.className === "container"){
+            y.className += " respo";
+            }else{
+                y.className ="container";
+            }
+        });
+    </script>
+</body>
+</html>

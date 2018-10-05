@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RawRespPortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="pheader">
+        <div class="tnav" id="myTnav">
+            <div class="name">
+                <strong>Alaa Al Shammari</strong>
+            </div>
+            <a href="contact.html" >Contact</a>
+            <a href="portfolio.html" >Portfolio</a>
+            <a href="index.html" style="background-color: #4aaaa5;">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myfun()">
+                <i class="fa fa-bars"></i>
+            </a>
+    
+        </div>
+    </div>
+    <div class="container" id="cont">
+        <div class="artTitle">
+            <a href="index.html">About Me</a>  
+        </div>
+        <hr>
+        <div class="imgbox">
+            <img src="./assets/images/al.jpg">
+        </div>
+        <p id ="firstp"><b>Life is beatiful and still only for people who pursue the dream.</b></p>
+        <p>My dream is to be a profesional programmer, I know it needs a real
+            hard work, it is not just snacking and imaging it may need you to
+            change your whole life, change how you see things , and that is what I
+        am doing right now.
+        see!!! I seems to be a phylospher too :).
+        so it was good to talk about my dream, now it's time to tell you my plan to do that:</p>
+        <p>
+            <ul>
+                <li>Find a program that develop a skill which in demand in now career market.</li>
+                <li>Study hard within the program and put your commitment and faith to finish it <br>as well as it requierd or even more.</li>
+                <li>Work hard on yourself and put all your potential in developing your skills of<br> communication and presentation to be as employer desire.</li>
+                <li>Get a good job that pay you enough and has a free time to use it to study.</li>
+                <li>Continue pursuing your dream of getting the Degrees and knowledge you plan to gain in your mind.</li>
+                <li>Remeber life is not easy for all people but maybe for some.<br><b> DON'T RELY ON LIFE CIRCUMSTANCES JUST KEEP FITING.</b></li>
+            </ul>
+        </p>
+    </div>
+    <div class="beforfooter"></div>
+    <footer class="foot">
+        &copy; Alhilly
+    </footer>
+    <script>
+        function myfun(){
+            var x = document.getElementById("myTnav");
+        if(x.className === "tnav"){
+            x.className += " responsive";
+        }else{
+            x.className = "tnav";
+        }
+       
+        }
+        $(function(){
+            var y = document.getElementById("cont");
+
+            if(y.className === "container"){
+            y.className += " respo";
+            }else{
+                y.className ="container";
+            }
+        });
+    </script>
+</body>
+</html>
