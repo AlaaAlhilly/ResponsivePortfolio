@@ -1,7 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "ResponsivePortfolio"
+			"path": "RawResPortfHomwork"
+		},
+		{
+			"path": "BootstrapPortfolio"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BootstrapPortfolio"
+	}
 }
